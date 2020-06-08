@@ -1,0 +1,37 @@
+clear
+tput cup 5 5
+echo "Starting script ..."
+sleep 1
+clear
+tput cup 5 5
+echo "Going to directory ..."
+cd ~/Instagram4mac
+sleep 1
+clear
+tput cup 5 5
+echo "Running git add --all ..."
+tput cup 6 5
+git add --all
+clear
+tput cup 5 5
+read -p 'What should be the name of the commit: ' commitvar
+tput cup 6 5
+echo "Running git commit -m $commitvar ..."
+clear
+tput cup 5 5
+git commit -m "$commitvar"
+clear
+tput cup 5 5
+echo "Runnning git pull origin master ..."
+tput cup 6 5
+git pull origin master
+clear
+tput cup 5 5
+echo "Runnning git push origin master ..."
+tput cup 6 5
+git push origin master
+clear
+tput cup 5 5
+echo "If there was no error, then congrates your commit was succesful :/"
+sleep 1
+clear
